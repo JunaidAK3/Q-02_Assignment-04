@@ -8,11 +8,11 @@ const img3 = "/img/3.jpg";
 
 export default function Home() {
   return (
-    <div className="h-screen w-screen bg-yellow-500 flex items-center justify-center">
-      <div className="flex space-x-7">
-        <Cards image={img1} name={"Juanid"} rollno={12345} day={"Monday"} />
-        <Cards image={img2} name={"Ali"} rollno={56728} day={"Tuesday"} />
-        <Cards image={img3} name={"Khan"} rollno={91011} day={"Wednesday"} />
+    <div className="h-screen w-screen flex items-center justify-center">
+      <div className="flex flex-wrap gap-7 justify-center">
+        <Cards image={img1} name={"Juanid"} age={17} id={12345} class={7} />
+        <Cards image={img2} name={"Ali"} age={16} id={56728} class={6} />
+        <Cards image={img3} name={"Khan"} age={19} id={91011} class={8} />
       </div>
     </div>
   );
